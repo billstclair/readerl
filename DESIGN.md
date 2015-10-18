@@ -31,7 +31,7 @@ Initial exploratory tasks:
 
 9. Go live.
 
-10. Profit (Google ads and direct pay for more history)
+10. Profit (Google ads and monthly payments to disable them or get more history)
 
 11. Add an external API for aggregated feeds, likely as RSS.
 
