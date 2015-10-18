@@ -1,4 +1,4 @@
-readerl
+ReadErl
 =====
 
 [ReadErl.com](http://ReadErl.com/) - just a place-holder index page for now.
