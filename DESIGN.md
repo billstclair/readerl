@@ -35,3 +35,12 @@ Initial exploratory tasks:
 
 11. Add an external API for aggregated feeds, likely as RSS.
 
+Other features, a grab bag as I think of them:
+
+* Multiple named feeds per user.
+
+* Public URLs for a subset of your named feeds. Global names, first come first served, and /&lt;you>/&lt;name>, where &lt;name> defaults to what you call it internally, but can be different.
+
+* An RSS feed for each of those public URLs.
+
+* JavaScript to insert a public feed on your web site. This probably already exists.
