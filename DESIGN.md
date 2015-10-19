@@ -7,9 +7,14 @@ This is also my first Erlang project. It will initially run on my [Digital Ocean
 
 1. The database hides behind an API, with synchronous and asynchronous entry points. I will use [mnesia](http://www.erlang.org/doc/man/mnesia.html) initially, but want to be able to switch to [CouchDB](http://couchdb.apache.org/) or [Riak](http://basho.com/products/), if necessary for scale.
 
-2. Pluggable feeds. I'll initially do [RSS](https://en.wikipedia.org/wiki/RSS) and [Twitter](https://dev.twitter.com/overview/documentation). I'd like to add [Medium](https://medium.com/), but right now the only way to do that is to screen scrape the HTML. Hopefully, they'll fix that soon, by expanding their API to allow more than just posting, or [shipping recommended stories](https://ifttt.com/recipes/331251-tweet-medium-stories-you-ve-recommended) to [IFTTT](https://ifttt.com/).
+2. Pluggable feeds. I'll initially do [RSS](https://en.wikipedia.org/wiki/RSS) and [Twitter](https://dev.twitter.com/overview/documentation) (via [twitter_kit](https://github.com/billstclair/twitter_kit)). I'd like to add [Medium](https://medium.com/), but right now the only way to do that is to screen scrape the HTML. Hopefully, they'll fix that soon, by expanding their API to allow more than just posting, or [shipping recommended stories](https://ifttt.com/recipes/331251-tweet-medium-stories-you-ve-recommended) to [IFTTT](https://ifttt.com/).
 
 I'm going to initially use [Chicago Boss](http://chicagoboss.org/) as web server. It may be heavier weight than I really need, but I love how interactive its web design is.
+
+Reminder links:
+
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+* [Daring Fireball's Markdown Docs](https://daringfireball.net/projects/markdown/basics)
 
 Initial exploratory tasks:
 
