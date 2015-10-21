@@ -5,6 +5,8 @@ ReadErl
 
 A multi-user feed aggregator.
 
+See [DESIGN.md](DESIGN.md) for planned features.
+
 Currently just an empty shell, created with [rebar3](http://www.rebar3.org/).
 
 Build
