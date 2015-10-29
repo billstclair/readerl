@@ -3,13 +3,13 @@ ReadErl Design
 
 My inspiration for ReadErl was Google Reader. When Google Reader shut down, I added an RSS aggregator to [Lisplog](https://lisplog.org/). That works quite well, for me, but it is configured with a text file containing a lisp list of RSS feed URLs. I want a tool for everybody to use, like Google Reader. I suppose I should survey the field; there are other tools out there. But I'm going to just build something original, and see if anybody wants to use it.
 
-This is also my first Erlang project. It will initially run on my [Digital Ocean](https://www.digitalocean.com/) VM, where I host a bunch of my web sites, but I want it to be able to scale big. This has a some implications:
+[ReadErl.com](http://ReadErl.com/) is currently running on a $5/month [Digital Ocean](https://www.digitalocean.com/) VM, but I want it to be able to scale big. This has a some implications:
 
-1. The database hides behind an API, with synchronous and asynchronous entry points. I will use [mnesia](http://www.erlang.org/doc/man/mnesia.html) initially, but want to be able to switch to [CouchDB](http://couchdb.apache.org/) or [Riak](http://basho.com/products/), if necessary for scale.
+1. The database hides behind an API, with synchronous and asynchronous entry points. I will use [mnesia](http://www.erlang.org/doc/man/mnesia.html) initially, likely via the [Amnesia](https://github.com/meh/amnesia) Elixir wrapper, but I want to be able to switch to [CouchDB](http://couchdb.apache.org/) or [Riak](http://basho.com/products/), if necessary for scale.
 
 2. Pluggable feeds. I'll initially do [RSS](https://en.wikipedia.org/wiki/RSS) and [Twitter](https://dev.twitter.com/overview/documentation). I'd like to add [Medium](https://medium.com/), but right now the only way to do that is to screen scrape the HTML. Hopefully, they'll fix that soon, by expanding their API to allow more than just posting, or [shipping recommended stories](https://ifttt.com/recipes/331251-tweet-medium-stories-you-ve-recommended) to [IFTTT](https://ifttt.com/).
 
-I'm going to initially use [Chicago Boss](http://chicagoboss.org/) as web server. It may be heavier weight than I really need, but I love how interactive its web design is.
+I was originally going to write ReadErl in Erlang, with the [Chicago Boss](http://chicagoboss.org/) web framework. Then I discovered [Elixir](http://elixir-lang.org/) and [Phoenix](http://www.phoenixframework.org/). [Popeye](https://en.wikipedia.org/wiki/Popeye), meet [Jessica Rabbit](https://en.wikipedia.org/wiki/Jessica_Rabbit).
 
 Reminder links:
 
