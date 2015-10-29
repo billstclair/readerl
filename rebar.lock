@@ -1,8 +1,0 @@
-[{<<"atomizer">>,
-  {git,"git@github.com:ipinak/atomizer.git",
-       {ref,"7022b33a845824454dc9467b934b023e1fc85a35"}},
-  0},
- {<<"erlsom">>,
-  {git,"https://github.com/danw/erlsom",
-       {ref,"84fed075d689e7cbe98e53c701b2fb5c51a35d12"}},
-  1}].

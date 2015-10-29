@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h2>ReadErl</h2>
+  <div class='row'>
+    <p class="lead">An RSS feed aggregator written in <a href='http://elixir-lang.org/'>Elixir</a>/<a href='http://www.phoenixframework.org/'>Phoenix</a></p>
+    <p>I'm working on it: <a href='https://github.com/billstclair/readerl'>github.com/billstclair/readerl</a></p>
+  </div>
+</div>
+
