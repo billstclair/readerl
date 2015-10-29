@@ -20,7 +20,7 @@ Initial exploratory tasks:
 
 1. Write some code to use [atomizer](https://github.com/ipinak/atomizer) to parse RSS feeds.
 
-2. Switch the dummy [ReadErl.com](http://ReadErl.com) web page from static HTML to Phone. *done*
+2. Switch the dummy [ReadErl.com](http://ReadErl.com) web page from static HTML to Phoenix. [**done**]
 
 3. Design the feed plugin API.
 
