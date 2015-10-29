@@ -5,4 +5,8 @@
     <p>I'm working on it: <a href='https://github.com/billstclair/readerl'>github.com/billstclair/readerl</a></p>
   </div>
 </div>
+<div class="small text-center">
+  <%= :erlang.system_info(:system_version) %><br/>
+  Elixir: <%= System.version %>, Phoenix: <%= Phoenix.Mixfile.project[:version] %>
+</div>
 
