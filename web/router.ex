@@ -17,6 +17,7 @@ defmodule Readerl.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/about", AboutController, :index
   end
 
   # Other scopes may use custom stacks.
