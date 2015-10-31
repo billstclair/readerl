@@ -7,6 +7,6 @@
 </div>
 <div class="small text-center">
   <%= :erlang.system_info(:system_version) %><br/>
-  Elixir: <%= System.version %>, Phoenix: <%= {_, _, vsn} = List.keyfind(Application.loaded_applications, :phoenix, 0); vsn %>
+  Elixir: <%= System.version %>, Phoenix: <%= {:ok, vsn} = :application.get_key(:phoenix, :vsn); vsn %>
 </div>
 
