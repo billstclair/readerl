@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" href="'<%= static_path(@conn, "/images/readerl-icon.png") %>" sizes="180x95" />
+    <link rel="icon" href="<%= static_path(@conn, "/images/readerl-icon-90x90.ico") %>" />
 
     <title>ReadErl</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
