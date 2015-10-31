@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0" xml:base="http://lisplog.org/">
+<channel>
+ <title>Lisplog</title>
+ <link>http://lisplog.org/</link>
+ <description>Blogging in Lisp</description>
+ <language>en</language>
+ <managingEditor>Bill St. Clair</managingEditor>
+ <generator>Lisplog</generator>
+<item>
+ <title>ReadErl Is Live</title>
+ <link>http://lisplog.org/readerl_is_live.html</link>
+ <description>&lt;p&gt;As my first Erlang project, I decided to create a multi-user RSS aggregator, sort of a simplified version of Google&#039;s now defunct &quot;Reader&quot;. I named it ReadErl. I bought the ReadErl.com domain, put up a static HTML &quot;coming soon&quot; page, and created an Erlang shell to fill in. My initial idea was to write the code in Erlang and use &lt;a href=&#039;http://chicagoboss.org/&#039;&gt;Chicago Boss&lt;/a&gt; for the web framework.&lt;/p&gt;
+
+&lt;p style=&#039;text-align: center;&#039;&gt;&lt;a href=&#039;http://ReadErl.com/&#039;&gt;&lt;img src=&#039;./images/readerl-icon-text.png&#039; alt=&#039;ReadErl&#039; width=&#039;455&#039; height=&#039;95&#039;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I discovered &lt;a href=&#039;http://elixir-lang.org/&#039;&gt;Elixir&lt;/a&gt; and the &lt;a href=&#039;http://www.phoenixframework.org/&#039;&gt;Phoenix&lt;/a&gt; web framework. Blown away. So I switched ReadErl to use those, created a simple Phoenix project, edited its default templates to make the result look pretty much like my original static HTML page, started up a brand new $5/month &lt;a href=&#039;https://www.digitalocean.com/&#039;&gt;Digital Ocean&lt;/a&gt; droplet, and got it running there.&lt;/p&gt;
+
+&lt;p&gt;Voila: &lt;a href=&#039;http://ReadErl.com/&#039;&gt;ReadErl.com&lt;/a&gt;, &lt;a href=&#039;https://github.com/billstclair/readerl&#039;&gt;github.com/billstclair/readerl&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After getting up the initial page, I decided I wanted it to self-document the versions of the software on which it&#039;s based. That&#039;s now displayed in small type at the bottom of the ReadErl.com page.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#039;https://github.com/billstclair/readerl/blob/master/web/templates/page/index.html.eex&#039;&gt;Here&#039;s&lt;/a&gt; how I did it (thanks to &lt;a href=&#039;https://elixir-lang.slack.com/team/utkarshkukreti&#039;&gt;utkarshkukreti&lt;/a&gt; for the better way to get the :vsn of an app):&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;pre&gt;&amp;lt;div class=&quot;small text-center&quot;&gt;
+  &amp;lt;%= :erlang.system_info(:system_version) %&gt;&amp;lt;br/&gt;
+  Elixir: &amp;lt;%= System.version %&gt;,
+  Phoenix: &amp;lt;%= {:ok, vsn} = :application.get_key(:phoenix, :vsn); vsn %&gt;
+&amp;lt;/div&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+</description>
+ <pubDate>Sat, 31 Oct 2015 02:30:20 GMT</pubDate>
+</item>
+<item>
+ <title>Audio Hijack 3</title>
+ <link>http://lisplog.org/audio_hijack_3.html</link>
+ <description>&lt;p&gt;When I updated my iMac to El Capitan, one of the applications that didn&#039;t work was a year-old version of Audio Hijack Pro. I updated today, to &lt;a href=&#039;https://rogueamoeba.com/audiohijack/&#039;&gt;Audio Hijack 3&lt;/a&gt; which replaces the old Audio Hijack &amp; Audio Hijack Pro. Audio Hijack allows you to record sound, from any application on your Mac.&lt;/p&gt;
+
+&lt;p style=&#039;text-align: center;&#039;&gt;&lt;img src=&#039;./images/audio-hijack-3-icon-256x256.png&#039; alt=&#039;Audio Hijack 3 icon&#039; width=&#039;256&#039; height=&#039;256&#039;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The new version has a graphic signal path designer, allowing you to pick sources, recorders, outputs, and filters. Cool. Here it is in action, recording an MP3 playing in Firefox (click for full-size image):&lt;/p&gt;
+
+&lt;p style=&#039;text-align: center;&#039;&gt;&lt;a href=&#039;./images/audio-hijack-3-in-action-1005x491.png&#039;&gt;&lt;img src=&#039;./images/audio-hijack-3-in-action-1005x491.png&#039; alt=&#039;Audio Hijack 3 in Action&#039; width=&#039;600&#039; height=&#039;293&#039;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Images appear in a recordings window, where you can label them for your audio player software (again, click for full-size image):&lt;/p&gt;
+
+&lt;p style=&#039;text-align: center;&#039;&gt;&lt;a href=&#039;./images/audio-hijack-3-recording-screen-847x513.png&#039;&gt;&lt;img src=&#039;./images/audio-hijack-3-recording-screen-847x513.png&#039; alt=&#039;Audio Hijack 3 Recordings screen&#039; width=&#039;600&#039; height=&#039;363&#039;/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Fri, 16 Oct 2015 16:02:11 GMT</pubDate>
+</item>
+<item>
+ <title>Inaka</title>
+ <link>http://lisplog.org/inaka.html</link>
+ <description>&lt;p&gt;&lt;a href=&#039;http://inaka.net/&#039;&gt;Inaka.net&lt;/a&gt; is the web site of a &quot;US consulting group with development resources in Buenos Aires, Argentina.&quot; &quot;Inaka is composed of a team of 30 developers, project managers, and designers and is wholly owned and operated by Erlang Solutions Inc - a Washington State corporation and subsidiary of &lt;a href=&#039;http://www.erlang-solutions.com/&#039;&gt;Erlang Solutions Ltd&lt;/a&gt;.&quot;&lt;/p&gt;
+
+&lt;p&gt;I just added their &lt;a href=&#039;http://inaka.net/blog/&#039;&gt;blog&lt;/a&gt;&#039;s RSS feed to my &lt;a href=&#039;./aggregator&#039;&gt;news aggregator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There&#039;s an Easter egg in their web site&#039;s template:&lt;br/&gt;
+&lt;pre&gt;&amp;lt;!--
+      |
+      \|/|/
+    \|\\|//|/
+     \|\|/|/
+      \\|//
+       \|/
+       \|/
+        |
+  _\|/__|_\|/____\|/_inaka.net
+--&gt;&lt;/pre&gt;&lt;/p&gt;</description>
+ <pubDate>Sat, 10 Oct 2015 22:14:06 GMT</pubDate>
+</item>
+<item>
+ <title>More News Feeds</title>
+ <link>http://lisplog.org/more_news_feeds.html</link>
+ <description>&lt;p&gt;I did a Google search for &quot;Erlang blogs&quot; and added some more &lt;a href=&#039;./aggregator/feeds.html&#039;&gt;RSS Feeds&lt;/a&gt; to the &lt;a href=&#039;./aggregator/&#039;&gt;news aggregator&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#039;http://basho.com/category/technical/&#039;&gt;Basho Technical Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;http://blog.electricimp.com/&#039;&gt;Electric Imp Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;http://www.erlang.org/news&#039;&gt;Erlang.org News&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;http://blog.erlware.org/&#039;&gt;Erlware Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;http://joearms.github.io/&#039;&gt;Joe Armstrong&#039;s Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;http://blog.oozou.com/&#039;&gt;The Oozoo Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;https://blog.whatsapp.com/&#039;&gt;WhatsApp Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;br/&gt;</description>
+ <pubDate>Fri, 09 Oct 2015 11:33:53 GMT</pubDate>
+</item>
+<item>
+ <title>Comitting to a GitHub Pull Request Branch</title>
+ <link>http://lisplog.org/comitting_to_a_github_pull_request_branch.html</link>
+ <description>&lt;p&gt;A GitHub &lt;a href=&#039;https://github.com/billstclair/pull-request-experiment/pull/1&#039;&gt;pull request&lt;/a&gt; submits a branch of a fork of a repository back to the repository it came from. I&#039;ve wondered about a line on that page:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Add more commits by pushing to the master branch on [forked repository].&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;So I did an experiment. I created the &lt;a href=&#039;https://github.com/billstclair/pull-request-experiment&#039;&gt;&lt;code&gt;billstclair/pull-request-repository&lt;/code&gt;&lt;/a&gt; with only a README in it. I forked that repository to &lt;a href=&#039;https://github.com/riak-wws/pull-request-experiment&#039;&gt;&lt;code&gt;riak-wws/pull-request-experiment&lt;/code&gt;&lt;/a&gt;, I committed a change to the fork and created a pull request. I committed another change to the fork. That change, as hinted by the quoted line above, &lt;i&gt;also&lt;/i&gt; showed up in the pull request.&lt;/p&gt;
+
+&lt;p&gt;This is convenient for fixing problems with pull requests, but the take-away for me is that if I expect to do work in a fork with a pull request that is NOT part of the pull request, I should make a new branch just for the pull request.&lt;/p&gt;</description>
+ <pubDate>Fri, 09 Oct 2015 09:14:42 GMT</pubDate>
+</item>
+<item>
+ <title>Controlling Rebar3 Application Compile Order</title>
+ <link>http://lisplog.org/controlling_rebar3_application_compile_order.html</link>
+ <description>&lt;p&gt;I recently spent a few days building the &lt;a href=&#039;https://github.com/chef/chef-server/tree/master/src/oc_erchef&#039;&gt;&lt;code&gt;oc_erchef&lt;/code&gt;&lt;/a&gt; Erlang application inside the &lt;a href=&#039;https://github.com/chef/chef-server&#039;&gt;&lt;code&gt;chef-server&lt;/code&gt;&lt;/a&gt; repository, as reported &lt;a href=&#039;./chef_dev_newbie.html&#039;&gt;here&lt;/a&gt;. I discovered that in an application with sub-applications, stored in the &lt;code&gt;apps/&lt;/code&gt; directory, the order of referencing those sub-applications in the main &lt;code&gt;.app.src&lt;/code&gt; file does &lt;i&gt;not&lt;/i&gt; affect &lt;a href=&#039;https://github.com/rebar/rebar3&#039;&gt;&lt;code&gt;rebar3&lt;/code&gt;&lt;/a&gt;&#039;s compilation order. Only the dependencies between the sub-applications has an effect on compilation order.&lt;/p&gt;
+
+&lt;p&gt;I created the &lt;a href=&#039;https://github.com/billstclair/rebar3-app-dependency&#039;&gt;&lt;code&gt;rebar3-app-dependency&lt;/code&gt;&lt;/a&gt; repository to illustrate this. See its README for details.&lt;/p&gt;
+
+&lt;p&gt;Also see Erlware&#039;s description of the &lt;code&gt;rebar3 tree&lt;/code&gt; command in &lt;a href=&#039;http://blog.erlware.org/rebar3-features-part-2-dependency-tree/&#039;&gt;Rebar3 Features (part 2): Dependency Tree&lt;/a&gt;.&lt;/p&gt;</description>
+ <pubDate>Fri, 09 Oct 2015 08:04:41 GMT</pubDate>
+</item>
+<item>
+ <title>Universal Crypto Keychains</title>
+ <link>http://lisplog.org/universal_crypto_keychains.html</link>
+ <description>&lt;p&gt;An idea crossed my mind this morning. I&#039;m calling it &quot;Universal Crypto Keychains&quot;. Those of us who use &lt;a href=&#039;https://en.wikipedia.org/wiki/Pretty_Good_Privacy&#039;&gt;PGP&lt;/a&gt; (usually as &lt;a href=&#039;https://www.gnupg.org/&#039;&gt;GnuPG&lt;/a&gt;) are accustomed to having a keychain containing our private keys and the public keys of our correspondents. Wouldn&#039;t it be nice if that keychain gave you access to wifi routers and web sites. Instead of establishing a userid and password at a plethora of sites, you&#039;d give them the public key corresponding to one of the private keys in your keychain.&lt;/p&gt;
+
+&lt;p&gt;I think this is what &lt;a href=&#039;http://openid.net/&#039;&gt;OpenID&lt;/a&gt; is supposed to be about, but I&#039;ve seen very little adoption. The only web site I use that supports it is &lt;a href=&#039;http://www.startssl.com/&#039;&gt;StartSSL.com&lt;/a&gt;, where I get my free web site SSL certificates (until &lt;a href=&#039;https://letsencrypt.org/&#039;&gt;Lets Encrypt&lt;/a&gt; takes off).&lt;/p&gt;
+
+&lt;p&gt;Why have people been so slow to adopt this? There&#039;s &lt;a href=&#039;https://wordpress.org/plugins/openid/&#039;&gt;a WordPress plugin&lt;/a&gt;. There are libraries for &lt;a href=&#039;http://janrain.com/openid-enabled/&#039;&gt;PHP, Ruby, Python, .Net, Java&lt;/a&gt;, &lt;a href=&#039;https://github.com/search?l=erlang&amp;q=openid+erlang&amp;ref=searchresults&amp;type=Code&amp;utf8=%E2%9C%93&#039;&gt;Erlang&lt;/a&gt;, &lt;a href=&#039;https://github.com/cl-openid/cl-openid&#039;&gt;Lisp&lt;/a&gt;, and I&#039;m sure others.&lt;/p&gt;</description>
+ <pubDate>Thu, 08 Oct 2015 17:02:41 GMT</pubDate>
+</item>
+<item>
+ <title>mod_spdy with Apache 2.4.7 on Ubuntu 14.04</title>
+ <link>http://lisplog.org/mod_spdy_with_apache_247_on_ubuntu_1404.html</link>
+ <description>&lt;p&gt;Just for yucks, I installed mod_spdy on my web server. I built it using the code and directions from &lt;a href=&#039;https://github.com/eousphoros/mod-spdy&#039;&gt;github.com/eousphoros/mod-spdy&lt;/a&gt;, and configured it using the directions from &lt;a href=&#039;https://www.rivy.org/2015/03/using-mod_spdy-with-apache-2-4-on-ubuntu-14-04/&#039;&gt;from the Thomas Elsen Security Blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I checked that it works &lt;a href=&#039;https://spdycheck.org/#lisplog.org&#039;&gt;with SPDYCheck&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I now get a bunch of these annoying warnings when I restart apache2:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;AH02559: The SSLCertificateChainFile directive (/etc/apache2/sites-enabled/www.lisplog.org.conf:42) is deprecated, SSLCertificateFile should be used instead&lt;br/&gt;
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;It looks pretty obvious how to fix them, but that may add an additional step to disabling the mod_ssl.so patch I just installed, so I think I&#039;ll keep it, as a reminder. I also left mod-spdy.txt in /etc/apache2, with uninstall instructions. Physical reminders are the best.&lt;/p&gt;
+
+&lt;p&gt;It would be better to enable HTTP/2. Apache doesn&#039;t yet support that. Maybe I should switch to &lt;a href=&#039;http://nginx.org/en/docs/http/ngx_http_v2_module.html&#039;&gt;nginx&lt;/a&gt;, but I&#039;m too lazy at present to figure out how to configure it for my web site, especially its 29 .htaccess files. Maybe Ubuntu 16.04 will include a newer Apache version that supports it.&lt;/p&gt;</description>
+ <pubDate>Wed, 07 Oct 2015 10:58:36 GMT</pubDate>
+</item>
+<item>
+ <title>&quot;stty -echo&quot; in Emacs Shell</title>
+ <link>http://lisplog.org/stty_echo_in_emacs.html</link>
+ <description>&lt;p&gt;I finally found today how to eliminate an Emacs shell behavior that&#039;s been bothering me for seemingly ages. Sometimes it gets in a mode where it echoes every command. &lt;code&gt;stty -echo&lt;/code&gt; turns that off. Yay! Thanks to Barry Margolin for &lt;a href=&#039;https://groups.google.com/forum/#!msg/gnu.emacs.help/cpQtrVpww04/Vx6TGqwfLX8J&#039;&gt;this post&lt;/a&gt; in the gnu.emacs.help Google group.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;pre&gt;$ emacs
+m-x shell
+$ stty echo    # This happens somehow, causes &lt;b&gt;bold&lt;/b&gt; lines below
+$ pwd
+&lt;b&gt;pwd&lt;/b&gt;
+/home/wws
+$ echo foo
+&lt;b&gt;echo foo&lt;/b&gt;
+foo
+$ stty -echo   # do this to fix
+&lt;b&gt;stty -echo&lt;/b&gt;
+$ pwd
+/home/wws
+$ echo foo
+foo
+&lt;/pre&gt;&lt;/blockquote&gt;</description>
+ <pubDate>Tue, 06 Oct 2015 16:20:41 GMT</pubDate>
+</item>
+<item>
+ <title>wws-scripts</title>
+ <link>http://lisplog.org/wwsscripts.html</link>
+ <description>&lt;p&gt;&lt;a href=&#039;https://github.com/billstclair/wws-scripts&#039;&gt;github.com/billstclair/wws-scripts&lt;/a&gt; is a small collection of simple shell scripts that I&#039;ve written over the years. &lt;/p&gt;
+
+&lt;p&gt;Documented by its README.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;</description>
+ <pubDate>Sat, 03 Oct 2015 17:50:23 GMT</pubDate>
+</item>
+</channel>
+</rss>

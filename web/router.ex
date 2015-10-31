@@ -18,6 +18,7 @@ defmodule Readerl.Router do
 
     get "/", PageController, :index
     get "/about", AboutController, :index
+    get "/testfeed.xml", TestFeedController, :index
   end
 
   # Other scopes may use custom stacks.
