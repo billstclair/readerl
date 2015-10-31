@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <p><img src='<%= static_path(@conn, "/images/readerl-icon-text.png") %>' alt='ReadErl' width='455' height='95'/></p>
+  <p><img src='<%= static_path(@conn, "/images/readerl-icon-text.png") %>' alt='ReadErl' width='455' height='95'/><b>&trade;</b></p>
   <div class='row'>
     <p class="lead">An RSS feed aggregator written in <a href='http://elixir-lang.org/'>Elixir</a>/<a href='http://www.phoenixframework.org/'>Phoenix</a></p>
     <p>I'm working on it: <a href='https://github.com/billstclair/readerl'>github.com/billstclair/readerl</a></p>
