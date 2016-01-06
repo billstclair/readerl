@@ -26,7 +26,7 @@ Initial exploratory tasks:
 
 4. Build the RSS plugin.
 
-5. Work on the web interface allowing creation of user accounts, and addition of feeds.
+5. Work on the web interface allowing creation of user accounts, and addition of feeds. Probably use Sonny Scroggin's [oauth2](https://hex.pm/packages/oauth2) for this.
 
 6. Write the code that periodically pulls in, parses, and stores in the database, all the known feeds.
 
