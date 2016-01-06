@@ -9,7 +9,7 @@
   "hackney": {:hex, :hackney, "1.3.2"},
   "httpoison": {:hex, :httpoison, "0.7.4"},
   "idna": {:hex, :idna, "1.0.2"},
-  "mnesia_ecto": {:git, "git@github.com:billstclair/mnesia_ecto.git", "430eb0c96b308d2c62a2d7105a0ff8e4b3d44aae", [branch: "master"]},
+  "mnesia_ecto": {:git, "git@github.com:billstclair/mnesia_ecto.git", "1100bc2e1536b22d223eee4e9d3518715e0c0442", [branch: "master"]},
   "phoenix": {:hex, :phoenix, "1.1.1"},
   "phoenix_ecto": {:hex, :phoenix_ecto, "2.0.0"},
   "phoenix_html": {:hex, :phoenix_html, "2.3.0"},
