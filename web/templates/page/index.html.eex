@@ -8,6 +8,7 @@
 <div class="small text-center">
   <%= :erlang.system_info(:system_version) %><br/>
   Erlang: <%= {:ok, version} = :file.read_file(:filename.join([:code.root_dir(), "releases", :erlang.system_info(:otp_release), "OTP_VERSION"])); Regex.named_captures(~r/(?<v>.*)\n*/, version)["v"] %>,
-  Elixir: <%= System.version %>, Phoenix: <%= {:ok, vsn} = :application.get_key(:phoenix, :vsn); vsn %>
+  Elixir: <%= System.version %>,
+  Phoenix: <%= {:ok, vsn} = :application.get_key(:phoenix, :vsn); vsn %>
 </div>
 
